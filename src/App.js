@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const onClick = () => {
+    console.log(window.Userback);
+    window.Userback.show();
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -9,6 +14,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p onClick={onClick}>Show Userback</p>
         <a
           className="App-link"
           href="https://reactjs.org"
